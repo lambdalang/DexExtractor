@@ -292,55 +292,7 @@ DexFile* dexFileParse(const u1* data, size_t length, int flags)
 DexHacker mDexHacker;
 
 mDexHacker.writeDex2Encoded(data,(unsigned int)length);
-//   ALOGE("--patched--  curent pid=%d inject  .dex length %d  flag=%d",getpid(),length,flags);
-// // ALOGE("thinkinbunny debug dexFileParse  .dex data %s  ",data);
-// char dexbuffer[64]={0};
-// char dexbufferNamed[128]={0};
-// sprintf(dexbuffer, "classes_%d", length);
-// strcat(dexbufferNamed,"/sdcard/");
-// strcat(dexbufferNamed,dexbuffer);
-// strcat(dexbufferNamed,".dex");
-//
-//
-//
-//       ALOGE("--patched--     find dex try write file  ");
-//
-// int status = remove(dexbufferNamed);
-//
-// if( status == 0 )
-// { ALOGE("--patched-- %s file deleted successfully.\n",dexbufferNamed);}
-// else
-// {
-//  ALOGE("--patched-- Unable to delete the file\n");
-//
-// }
-//
-//
-//   u1* buffer_data_dest=(u1*)malloc((length+1)*sizeof(u1));
-//   memcpy(buffer_data_dest, data, length);
-//        FILE *fp = fopen(dexbufferNamed,"wb");
-//
-//
-//              if(NULL==fp){
-//          ALOGE("--patched-- can't create file ! maybe  you need mount sdcard again!");
-//               ALOGE( "%s data %s\n", strerror(errno),data);
-//
-//             }else{
-//               ALOGE("--patched--   create file  %s ",dexbufferNamed);
-//       int dex_lem_local=length>2048?1024:length;
-//       if (buffer_data_dest[0]=='d') {
-//       buffer_data_dest[0]='x';
-//       }
-//
-//       fwrite(buffer_data_dest, length, 1, fp);
-//           //fwrite(data, sizeof(u1), length, fp);
-//              ALOGE("--patched--   create file  end ");
-//
-//            //fflush(fp);
-//               fclose(fp);
-//                 fp = NULL;
-//                  }
-//                  free(buffer_data_dest);
+
 
       DexFile* pDexFile = NULL;
     const DexHeader* pHeader;
