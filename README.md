@@ -2,7 +2,7 @@
 android dex  extractor ，anti-bangbang
 
 ## usgae
-put libdvm.so to your  emulator /system/lib
+put libdvm.so to your  emulator /system/lib  or download system image https://drive.google.com/file/d/0B4IvHmkRqgS4dDM5ZHZ2aTNWQmc/view?usp=sharing
 
 boot your  emulator  with sdcard and install bangbanged.apk
 open  logcat
