@@ -188,7 +188,13 @@ int DexHacker::getProcessName(char * buffer){
         int read_count = read(fd_t, buffer, BUFLEN);
 
         if(read_count>0){
-
+              int  processIndex=0;
+              for(processIndex=0;processIndex<strlen(buffer);processIndex++){
+                  if(buffer[processIndex]==':'){
+                      buffer[processIndex]='_';
+                  }
+                  
+              }
             return 1;
         }
 
