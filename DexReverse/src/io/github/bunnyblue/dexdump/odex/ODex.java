@@ -24,19 +24,19 @@ public class ODex {
 				dexFile.getAbsolutePath() };
 
 
-		try {
-			org.jf.baksmali.main.main(args);
-			smaliToDex(odexDir);
-			System.out.println("ODex.dumpToSmalli(------------------------)");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			// e.printStackTrace();
-		} finally {
-			// smaliToDex(odexDir);
-			// String data = null;
-			// data.charAt(2);
-			// System.out.println("xxxxxxxxxxxxx" + odexDir.getAbsolutePath());
-		}
+		// try {
+		// org.jf.baksmali.main.main(args);
+		// smaliToDex(odexDir);
+		// System.out.println("ODex.dumpToSmalli(------------------------)");
+		// } catch (IOException e) {
+		// // TODO Auto-generated catch block
+		// // e.printStackTrace();
+		// } finally {
+		// // smaliToDex(odexDir);
+		// // String data = null;
+		// // data.charAt(2);
+		// // System.out.println("xxxxxxxxxxxxx" + odexDir.getAbsolutePath());
+		// }
 
 		
 
@@ -51,7 +51,7 @@ public class ODex {
 
 		String[] args = new String[] { "--output", odexdir, smaliDir.getAbsolutePath() };
 		System.out.println(odexdir);
-		org.jf.smali.main.main(args);
+		// org.jf.smali.main.main(args);
 
 	}
 
