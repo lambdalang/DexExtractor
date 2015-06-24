@@ -21,6 +21,6 @@ class DexHacker{
 public:
     void  writeDex2Encoded(unsigned char * data,size_t length);
     void  writeEncodedDex2Dex(const char *dexPath);
-    char * getProcessName(char * buffer);
+    int getProcessName(char * buffer);
 };
 #endif /* defined(____DexHacker__) */
