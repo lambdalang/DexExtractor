@@ -20,10 +20,10 @@ void DexHacker::writeDex2Encoded(unsigned char *data, size_t length){
     char dexbufferNamed[128]={0};
     char * bufferProcess=(char*)calloc(256,sizeof(char*));
 
-   bufferProcess= getProcessName(bufferProcess);
+   int  processStatus= getProcessName(bufferProcess);
     sprintf(dexbuffer, "_classes_%d", length);
     strcat(dexbufferNamed,"/sdcard/");
-    if (bufferProcess!=NULL) {
+    if (processStatus==1) {
       strcat(dexbufferNamed,bufferProcess);
         strcat(dexbufferNamed,dexbuffer);
 
@@ -171,7 +171,7 @@ char* itoa(int i, char b[]){
     }while(i);
     return b;
 }
-char * DexHacker::getProcessName(char * buffer){
+int DexHacker::getProcessName(char * buffer){
     char path_t[256]={0};
  //   char buffer[512]={0} ;
 
@@ -189,11 +189,11 @@ char * DexHacker::getProcessName(char * buffer){
 
         if(read_count>0){
 
-            return buffer;
+            return 1;
         }
 
 
     }
 
-    return NULL;
+    return 0;
 }
