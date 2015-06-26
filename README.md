@@ -1,14 +1,12 @@
 # DexExtractor
-android dex  extractor ，anti-bangbang
+Android dex file extractor, anti-bangbang (Bangcle)
 
-## usgae
-put libdvm.so to your  emulator /system/lib  or download system image 
-update！fix  memery leak
+## Usage
+Put libdvm.so on the emulator `/system/lib` or download the pre-setup system image
+Update! fix memory leak
 https://drive.google.com/file/d/0B4IvHmkRqgS4Nlh5WmVhRU9aNlE/view?usp=sharing
 
-boot your  emulator  with sdcard and install bangbanged.apk
-open  logcat
-monitor Application tag at dalvikm like this ![logcat](art/image.png), you will see  create file end.
-just  adb  pull /sdcard/pkg_classes_xxx.dex<br>
-just run java -jar Decoder.jar pkg_dexs_dir
-get all odex  endwith read.dex
+Boot the emulator with an sdcard and install protected application.
+Open logcat and monitor for the Application tag for the dalvikvm like this ![logcat](art/image.png), you will see created file name output here.
+Then use adb to pull the file, `adb  pull /sdcard/pkg_classes_xxx.dex`<br>
+Then run `java -jar Decoder.jar pkg_dexs_dir` to get all odex used from the unprotected file.
