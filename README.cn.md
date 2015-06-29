@@ -1,5 +1,7 @@
 # DexExtractor
-android dex脱壳，对抗梆梆加固
+android dex脱壳<br>
+1支持梆梆加固
+2支持爱加密
 
 ## usgae
 push libdvm.so android4.4模拟器 /system/lib
@@ -11,4 +13,5 @@ adb  install  安装加固后的apk
   adb  pull /sdcard/classes_xxx.dex 拖出
 
 文件base64编码了，解码odex，java -jar Decoder.jar dex目录
-所有的odex
+所有的odex(梆梆加固)
+爱加密出来的是dex
