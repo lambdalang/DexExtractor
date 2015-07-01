@@ -2,9 +2,8 @@
 Android dex file extractor, anti-bangbang (Bangcle)
 
 ## Usage
-Put libdvm.so on the emulator `/system/lib` or download the pre-setup system image
-Update! fix memory leak
-https://drive.google.com/file/d/0B4IvHmkRqgS4Nlh5WmVhRU9aNlE/view?usp=sharing
+Put libdvm.so on the emulator `/system/lib` or download the pre-setup system image at  [Google Drive](https://drive.google.com/file/d/0B4IvHmkRqgS4Nlh5WmVhRU9aNlE/view?usp=sharing)
+
 
 Boot the emulator with an sdcard and install protected application.
 Open logcat and monitor for the Application tag for the dalvikvm like this ![logcat](art/image.png), you will see created file name output here.
